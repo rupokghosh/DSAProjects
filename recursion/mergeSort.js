@@ -1,3 +1,5 @@
-function mergeSort(){
+
+
+function mergeSort(n){
 
 }

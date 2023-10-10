@@ -17,10 +17,16 @@ function fibs(n){
     return sequence;
    
 }
-console.log(fibs(30));
+console.log(fibs(8));
 
 // recursive method
 
-function fibsRec(n){
+function fibsRec(n, currentNum = 0, nextNum = 1, result = []) {
+    if (n === 0) {
+      return result;
+    }
+    result.push(currentNum);
+    return fibsRec(n - 1, nextNum, currentNum + nextNum, result);
+  }
 
-}
+console.log(fibsRec(8));
